@@ -4,7 +4,7 @@ Haskell seems interesting so I want to try it!
 
 ## Setup
 
-There's a flake so just install nix and
+There's a flake so just install nix and  
 `nix develop`
 if ur using direnv remember to do  
 `direnv allow`
@@ -14,9 +14,9 @@ if ur using direnv remember to do
 so far i have just made some functions in some files  
 we can use this like this
 1 start interactive haskell shell  
-`ghci`
+`ghci`  
 2 load module ( lets use lists module as a example here)  
-`:l lists`
+`:l lists`  
 3 yay loaded now you can call the functions within  
 `triangles`
 
