@@ -12,6 +12,7 @@
           haskellPackages.ghc
           haskellPackages.cabal-install
           haskellPackages.haskell-language-server
+          haskellPackages.hpack
         ];
         shellHook = "echo '🛡️ 🔥  🥵 Haskell flake active! \n fun learning!'";
       };
