@@ -5,15 +5,17 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      haskellPackages = pkgs.haskell.packages.ghc912;
     in
     {
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = with pkgs; [
-          haskellPackages.ghc
-          haskellPackages.cabal-install
-          haskellPackages.haskell-language-server
-          haskellPackages.hpack
-        ];
+        buildInputs = with pkgs;
+          [
+            haskellPackages.ghc
+            haskellPackages.cabal-install
+            haskellPackages.haskell-language-server
+            haskellPackages.hpack
+          ];
         shellHook = "echo '🛡️ 🔥  🥵 Haskell flake active! \n fun learning!'";
       };
     };
